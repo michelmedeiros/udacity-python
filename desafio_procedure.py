@@ -39,3 +39,52 @@ print(is_friend('Diane'))
 
 print(is_friend('Fred'))
 #>>> False
+
+
+
+# Define a procedure, is_friend, that takes
+# a string as its input, and returns a
+# Boolean indicating if the input string
+# is the name of a friend. Assume
+# I am friends with everyone whose name
+# starts with either 'D' or 'N', but no one
+# else. You do not need to check for
+# lower case 'd' or 'n'
+
+def is_friend(friend):
+    if friend[0] == 'D' or friend[0] == 'N':
+        return True
+    else:
+        return False
+
+print (is_friend('Diane'))
+#>>> True
+
+print (is_friend('Ned'))
+#>>> True
+
+print (is_friend('Moe'))
+#>>> False
+
+
+
+# Define a procedure, print_numbers, that takes
+# as input a positive whole number, and prints
+# out all the whole numbers from 1 to the input
+# number.
+
+# Make sure your procedure prints "upwards", so
+# from 1 up to the input number.
+def print_numbers(number):
+    i = 0
+    while i < number:
+        i = i + 1
+        print(i)
+
+print_numbers(3)
+# >>> 1
+# >>> 2
+# >>> 3
+
+
+
